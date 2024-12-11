@@ -16,26 +16,17 @@ additionally the database for geoip2 needs to be installed and you need to point
    cd /users/auser/project
 
 4. Run the Script
-   Use one of the following commands, depending on your analysis needs:  
 
-   - Analyze with Time Window and Threshold:
-     python log_analysis.py /path/to/log/file --time_window <value> --threshold <value>
-     Replace `<value>` with your desired parameters.  
-     Example:  
-         python log_parser.py access.log --time_window 10 --threshold 5
+   Type : Python3 log_parser.py
 
-   - Search for Specific Patterns (e.g., Failed Logins): 
-     python log_parser.py /path/to/log/file --search "failed login"
+5. Loading a File
+   The Project is now running. 
+   Set your flags with the GUI first.
+   Use the GUI to upload a web server access log file.
 
-5. Review the Results
+6. Review the Results
    The script will display suspicious activity, such as repeated failed login attempts.  
-   Example Output:  
 
-           Suspicious IP addresses with repeated failed login attempts:
-           
-           IP: 192.168.1.1
-             - Line: 45, Date/Time: 2024-12-04 14:23:45+0000, Country: United States
-             - Line: 78, Date/Time: 2024-12-04 14:24:30+0000, Country: United States
-        
-           IP: 203.0.113.5
-             - Line: 102, Date/Time: 2024-12-04 14:25:10+0000, Country: Unknown
+if using linux please install tkinter using this command
+sudo apt-get install python3-tk
+
